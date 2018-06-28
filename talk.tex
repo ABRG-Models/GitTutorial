@@ -1,0 +1,186 @@
+\documentclass{beamer}
+
+\usepackage{listings}
+
+\usepackage{color}
+
+\definecolor{codered}{rgb}{0.69,0.09,0.12}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.9,0.9,0.9}
+\definecolor{forecolour}{rgb}{0.9,0.9,0.9}
+
+\lstdefinestyle{bashstyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codered},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+
+\lstset{style=bashstyle}
+
+\title{Using Git for Comp-Neuro}
+
+\author{Seb James}
+\institute{ABRG Sheffield Internal Seminar}
+\date{2018/06/28}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage % makes a title like \maketitle
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction}
+  This seminar is about a command-line tool called Git.
+
+  There's going to be a lot of \alert{text} in these slides.
+\end{frame}
+
+% Columns exampe frame
+\begin{frame}
+  \frametitle{Cols example}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Item 1
+        \item Item 1
+        \item Item 1
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      Non-itemized content
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% Example code listing frame
+\begin{frame}[fragile] % note need for fragile when using lstlisting
+  \frametitle{Example code}
+  \begin{lstlisting}[language=bash]
+    cd ~/blah
+    ls
+    zip -r file.zip
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What is Git?}
+  Git is a \textbf{Revision Control} or \textbf{Version Control} tool.
+
+  Revision control has two main features:
+
+  \begin{enumerate}
+    \pause \item Revision control allows you to keep references to different versions of a
+      single file \pause without having to explicitly make copies
+      \pause \item Most revision control tools allow several people to work
+      on the same files %\pause with (non-magic) algorithms that (usually) correctly merge changes
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{File revisions}
+  I bet you have folders that look like this:
+  \pause \begin{itemize}
+      \item myCoolProgram.cpp
+      \pause \item myCoolProgram\_old.cpp
+      \pause \item myCoolProgram\_1.cpp
+      \pause \item myCoolProgram\_thisOneWorked.cpp
+      \item myCoolProgram\_whoKnowsWhatThisOneIs.cpp
+  \end{itemize}
+  \pause With revision control, you only have
+\end{frame}
+
+\begin{frame}
+  \frametitle{Working with other people}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Why did someone develop Git?}
+  \begin{itemize}
+    \pause \item Most revision control tools have been pretty good at
+    feature 1 (file versioning)
+    \pause \item ...but not great at managing multiple contributions
+    \pause \item That caused Linus Torvalds to use a proprietary RCS
+    called BitMover from 2002 to manage the Linux code base.
+    \pause \item In 2005 Linus fell out with BitMover, and Git was
+    created to replace it.
+    \pause \item The name \emph{git} doesn't really mean anything.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What's different about Git?}
+  \begin{itemize}
+  \item Git is a \emph{distributed} revision control system
+  \pause \item It doesn't have the classical client-server architecture...
+  \pause \item ...although typically you will work with a common
+  \alert{remote} repository as your \alert{upstream} source.
+  \pause \item When you \alert{clone} a repository from a source, you have
+    \emph{everything} (all the file history and meta-data) in the
+    files you receive to become a source for someone else to clone the
+    repository.
+  \pause \item That means you can work on your code, making incremental
+  \alert{commits} even when you don't have internet access.
+  \pause \item And every copy of the repo is a backup!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Git is \emph{not} github.com}
+  \begin{itemize}
+  \item Github is a commercial website which makes it easy to use Git
+  \item bitbucket.org is an alternative
+  \pause \item Generally, public hosting is free, private hosting
+  incurs a fee
+  \pause \item It's pretty easy to host a git repository yourself
+  \pause \item But the nice web interface has made github.com very
+  popular for source code hosting
+  \pause \item It's now a big business; it was acquired by Microsoft in early June
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Why is Git good for us?}
+  \begin{itemize}
+  \item We don't have hundreds of people working on the same files, but...
+    \pause \item We write code, so that's very natural to hold in
+    revision control (also XML)
+    \pause \item We have a frequent need to ``tag'' our work (e.g. to
+    match up with a paper or document)
+    \pause \item If you write your papers in Latex, you can include
+    your paper alongside your model code in a single, public
+    repository
+    \pause \item Use of Github is a very effective way to share your published models with
+    your peers
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Git primer}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+\end{frame}
+
+\end{document}

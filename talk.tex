@@ -64,7 +64,7 @@
 
   \begin{enumerate}
     \pause \item Revision control allows you to keep references to different versions of a
-      single file \pause without having to explicitly make copies
+      single file \emph{without having to explicitly make copies}
       \pause \item Most revision control tools allow several people to work
       on the same files %\pause with (non-magic) algorithms that (usually) correctly merge changes
   \end{enumerate}
@@ -90,12 +90,14 @@
 
 \begin{frame}
   \frametitle{\emph{Project} revisions}
+  \begin{itemize}
+    \item The ability to branch and tag \emph{really} comes into its own when
+      you have any kind of project with more than one file in it.
 
-  The ability to branch and tag \emph{really} comes into its own when
-  you have any kind of project with more than one file in it.
-
-  All of a sudden you find yourself needing one folder for each
-  version of your project.
+    \item Without this, you find yourself needing one folder for
+      each version of your project, duplicating files left, right
+      and centre.
+  \end{itemize}
 
 \end{frame}
 
@@ -192,11 +194,13 @@
     revision control (also XML)
     \pause \item We have a frequent need to \alert{tag} our work (e.g. to
     match up with a paper or document)
+    \pause \item ``It used to work, but now I've broken it and I can't
+    get it back to working again'': Revision control makes it easy to
+    revert to versions of your code which you knew would work
     \pause \item You can include your paper alongside your model code
     in a single, public repository
-    \pause \item Use of Github is a very effective way to share your published models with
-    your peers
-
+    \pause \item Use of Github is a very effective way to share your
+    published models with your peers
   \end{itemize}
 \end{frame}
 
@@ -208,7 +212,7 @@
 
   Head over to:
 
-  http://sebjameswml.github.io/git-novice/
+  \textbf{http://sebjameswml.github.io/git-novice/}
 
   And start on the lesson ``A better kind of Backup''
 

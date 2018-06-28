@@ -46,36 +46,14 @@
 
 \begin{frame}
   \frametitle{Introduction}
-  This seminar is about a command-line tool called Git.
+  \begin{itemize}
+    \item This seminar is about a command-line tool called Git.
 
-  There's going to be a lot of \alert{text} in these slides.
-\end{frame}
+    \item There's going to be a lot of \alert{text} in these slides (sorry!)
 
-% Columns exampe frame
-\begin{frame}
-  \frametitle{Cols example}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{itemize}
-        \item Item 1
-        \item Item 1
-        \item Item 1
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-      Non-itemized content
-    \end{column}
-  \end{columns}
-\end{frame}
-
-% Example code listing frame
-\begin{frame}[fragile] % note need for fragile when using lstlisting
-  \frametitle{Example code}
-  \begin{lstlisting}[language=bash]
-    cd ~/blah
-    ls
-    zip -r file.zip
-  \end{lstlisting}
+    \item I'll give an overview of Git and why it's helpful to use it, then we'll go
+      through some example tasks together.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -103,10 +81,63 @@
       \item myCoolProgram\_whoKnowsWhatThisOneIs.cpp
   \end{itemize}
   \pause With revision control, you only have
+  \begin{itemize}
+  \item myCoolProgram.cpp
+  \end{itemize}
+  \pause You might then have \alert{branches} like \textbf{master},
+  \textbf{tryingIdea1}, \textbf{PlosCompBio2018} and so on.
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emph{Project} revisions}
+
+  The ability to branch and tag \emph{really} comes into its own when
+  you have any kind of project with more than one file in it.
+
+  All of a sudden you find yourself needing one folder for each
+  version of your project.
+
 \end{frame}
 
 \begin{frame}
   \frametitle{Working with other people}
+  (This is `main feature 2')
+
+  \begin{itemize}
+    \item Suppose you have some code which is used by yourself and 5 of your
+      colleagues - some sort of library.
+
+    \pause \item You find an error and fix it. Now you have to email the fix to \emph{5} people.
+
+    \pause \item Just after you emailed them, you find an error in your fix, and you
+    have to send another email...
+
+    \pause \item Now imagine that one of your colleagues found a
+    separate fix in the same file and emails that around. Which fix is
+    more important? Who is going to merge the two fixes together?
+  \end{itemize}
+
+  \pause You need a revision control system to automate the process of
+  distributing changes between users of a set of files, and to manage
+  the merging of changes together.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Other revision control systems}
+  \begin{itemize}
+  \item RCS (Revision Control System)
+  \item SCCS (Source Code Control System)
+  \item CVS (Concurrent Versions System)
+  \item Subversion
+  \item Tons of proprietary systems
+  \item Bazaar
+  \item BitKeeper
+  \item Mercurial
+  \end{itemize}
+
+  \pause Git is not the first revision control system, and its
+  developers could draw on a lot of collective knowledge when
+  designing it.
 \end{frame}
 
 \begin{frame}
@@ -115,9 +146,9 @@
     \pause \item Most revision control tools have been pretty good at
     feature 1 (file versioning)
     \pause \item ...but not great at managing multiple contributions
-    \pause \item That caused Linus Torvalds to use a proprietary RCS
-    called BitMover from 2002 to manage the Linux code base.
-    \pause \item In 2005 Linus fell out with BitMover, and Git was
+    \pause \item That caused Linus Torvalds to use the proprietary
+    BitKeeper from 2002 to manage the Linux code base.
+    \pause \item In 2005 Linus fell out with BitMover Inc., and Git was
     created to replace it.
     \pause \item The name \emph{git} doesn't really mean anything.
   \end{itemize}
@@ -131,9 +162,8 @@
   \pause \item ...although typically you will work with a common
   \alert{remote} repository as your \alert{upstream} source.
   \pause \item When you \alert{clone} a repository from a source, you have
-    \emph{everything} (all the file history and meta-data) in the
-    files you receive to become a source for someone else to clone the
-    repository.
+    \emph{everything} (all the file history and meta-data) in those
+    files to become a source for someone else.
   \pause \item That means you can work on your code, making incremental
   \alert{commits} even when you don't have internet access.
   \pause \item And every copy of the repo is a backup!
@@ -147,8 +177,8 @@
   \item bitbucket.org is an alternative
   \pause \item Generally, public hosting is free, private hosting
   incurs a fee
-  \pause \item It's pretty easy to host a git repository yourself
-  \pause \item But the nice web interface has made github.com very
+  \pause \item It's pretty easy to host a git repository yourself, but
+  the nice web interface has made github.com very
   popular for source code hosting
   \pause \item It's now a big business; it was acquired by Microsoft in early June
   \end{itemize}
@@ -156,15 +186,14 @@
 
 \begin{frame}
   \frametitle{Why is Git good for us?}
+  We don't have hundreds of people working on the same files, but...
   \begin{itemize}
-  \item We don't have hundreds of people working on the same files, but...
     \pause \item We write code, so that's very natural to hold in
     revision control (also XML)
-    \pause \item We have a frequent need to ``tag'' our work (e.g. to
+    \pause \item We have a frequent need to \alert{tag} our work (e.g. to
     match up with a paper or document)
-    \pause \item If you write your papers in Latex, you can include
-    your paper alongside your model code in a single, public
-    repository
+    \pause \item You can include your paper alongside your model code
+    in a single, public repository
     \pause \item Use of Github is a very effective way to share your published models with
     your peers
 
@@ -172,15 +201,17 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{The Git primer}
-\end{frame}
+  \frametitle{The Git Tutorial}
+  The rest of these pages have been put together from material taken
+  from the Software Carpentry project, which emphasises the use of
+  Git.
 
-\begin{frame}
-  \frametitle{}
-\end{frame}
+  Head over to:
 
-\begin{frame}
-  \frametitle{}
+  http://sebjameswml.github.io/git-novice/
+
+  And start on the lesson ``A better kind of Backup''
+
 \end{frame}
 
 \end{document}

@@ -11,6 +11,12 @@
 \definecolor{backcolour}{rgb}{0.9,0.9,0.9}
 \definecolor{forecolour}{rgb}{0.9,0.9,0.9}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = {codered}
+}
+
 \lstdefinestyle{bashstyle}{
     backgroundcolor=\color{backcolour},
     commentstyle=\color{codered},
@@ -42,6 +48,7 @@
 
 \begin{frame}
   \titlepage % makes a title like \maketitle
+  Find this at: \url{https://github.com/ABRG-Models/GitTutorial}
 \end{frame}
 
 \begin{frame}
@@ -212,7 +219,7 @@
 
   Head over to:
 
-  \textbf{http://sebjameswml.github.io/git-novice/}
+  \url{http://sebjameswml.github.io/git-novice/}
 
   And start on the lesson ``A better kind of Backup''
 
@@ -220,7 +227,7 @@
 
 \begin{frame}[fragile]
   \frametitle{Compiling libmorphologica}
-    Github webpage: https://github.com/ABRG-Models/morphologica
+    Github webpage: \url{https://github.com/ABRG-Models/morphologica}
 
   \begin{lstlisting}[language=bash]
 # Prerequisites on Linux:
@@ -241,6 +248,8 @@ sudo ldconfig\end{lstlisting}
 
 \begin{frame}[fragile]
   \frametitle{Compiling Ermentrout2009}
+  Github webpage: \url{https://github.com/ABRG-Models/Ermentrout2009}
+
   This is an example of a model which links to libmorphologica
   \begin{lstlisting}[language=bash]
 git clone git@github.com:ABRG-Models/Ermentrout2009.git

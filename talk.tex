@@ -38,11 +38,11 @@
 
 \lstset{style=bashstyle}
 
-\title{Using Git for Comp-Neuro}
+\title{Using Git for Science}
 
 \author{Seb James}
-\institute{ABRG Sheffield Internal Seminar}
-\date{2018/06/28}
+\institute{psy6422}
+\date{2020/06/06}
 
 \begin{document}
 
@@ -54,18 +54,22 @@
 \begin{frame}
   \frametitle{Introduction}
   \begin{itemize}
-    \item This seminar is about a command-line tool called Git.
+    \item This session is about a command-line tool called Git.
 
-    \item There's going to be a lot of \alert{text} in these slides (sorry!)
+    \item Git is a tool for managing text, so these slides are naturally text
+      heavy!
 
-    \item I'll give an overview of Git and why it's helpful to use it, then we'll go
-      through some example tasks together.
+    \item We'll use it with the help of a website built around Git: github.com
+
+    \item I'll give an overview of Git, including its jargon
+      (\alert{clone},\alert{commit},\alert{checkout}...) and why it's
+      such a useful tool, then we'll go through some example tasks together.
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{What is Git?}
-  Git is a \textbf{Revision Control} or \textbf{Version Control} tool.
+  Git is a \alert{Revision Control} or \alert{Version Control} tool.
 
   Revision control has two main features:
 
@@ -78,21 +82,111 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{File revisions}
+  \frametitle{File versions}
   I bet you have folders that look like this:
   \pause \begin{itemize}
-      \item myCoolProgram.cpp
-      \pause \item myCoolProgram\_old.cpp
-      \pause \item myCoolProgram\_1.cpp
-      \pause \item myCoolProgram\_thisOneWorked.cpp
-      \item myCoolProgram\_whoKnowsWhatThisOneIs.cpp
+      \item myProgram.r
+      \pause \item myProgram\_old.r
+      \item myProgram\_1.r
+      \item myProgram\_thisOneWorked.r
+      \item myProgram\_whoKnowsWhatThisOneIs.r
   \end{itemize}
   \pause With revision control, you only have
   \begin{itemize}
-  \item myCoolProgram.cpp
+  \item myProgram.r
   \end{itemize}
-  \pause You might then have \alert{branches} like \textbf{master},
-  \textbf{tryingIdea1}, \textbf{PlosCompBio2018} and so on.
+\end{frame}
+
+% The master branch slide
+\begin{frame}
+  \frametitle{Branches instead of file versions}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      When you use git, you use \alert{branches} to work with
+      different file versions. There's one central branch, which
+      is usually called \textbf{master}.
+      \begin{block}{Clone}
+        \begin{itemize}
+        \item When you \alert{clone} a repository from github, you'll get all
+          the files as they exist on the \textbf{master} branch
+
+        \item Also you get \emph{all the information needed} to see the files
+          on any of the other branches (each has a name)
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% The master branch with increments/commits
+\begin{frame}
+  \frametitle{A sequence of changes on master}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      \begin{block}{Commits}
+        \begin{itemize}
+          \item There can be different versions of myProgram.r available on
+            \textbf{master}; but it's a \emph{linear sequence of changes}.
+
+          \item Each change is a \alert{commit to master}.
+
+          \item Each commit has a \emph{universally unique identifier}.
+
+          \item When you first clone, you'll see the files at the \alert{HEAD}
+            of \textbf{master}
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree_mastercommits_head.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% About what a commit includes
+\begin{frame}
+  \frametitle{What's in a commit?}
+  \begin{columns}[T]
+    \begin{column}{.3\textwidth}
+      \begin{block}{Commits contain changes}
+        \begin{itemize}
+        \item One commit can include the changes to one file
+        \item One commit can also include changes to multiple files
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.7\textwidth}
+      \includegraphics[width=\textwidth]{tree_mastercommits_commitdetail.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% Branch one
+\begin{frame}
+  \frametitle{Branches instead of file versions}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      When you use git, you use \alert{branches} to allow you to experiment with
+      different files. There's one central branch, which
+      is usually called \textbf{master}.
+      \begin{block}{Checkout}
+        When you `checkout' a branch, it updates your file to the content it
+        has on that particular branch
+        \begin{itemize}
+          \item Checkout \textbf{idea1}; get myProgram.r with the code for
+            your first idea.
+          \item Checkout \textbf{NatureNeuroSub1}; get myProgram.r as it was
+            when you submitted your paper to Nature Neuroscience.
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree.png}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -189,7 +283,7 @@
   \pause \item It's pretty easy to host a git repository yourself, but
   the nice web interface has made github.com very
   popular for source code hosting
-  \pause \item It's now a big business; it was acquired by Microsoft in early June
+  \pause \item It's now a big business; it was acquired by Microsoft in 2018
   \end{itemize}
 \end{frame}
 
@@ -225,44 +319,5 @@
   And start on the lesson ``A better kind of Backup''
 
 \end{frame}
-
-\begin{frame}[fragile]
-  \frametitle{Compiling libmorphologica}
-    Github webpage: \url{https://github.com/ABRG-Models/morphologica}
-
-  \begin{lstlisting}[language=bash]
-# Prerequisites on Linux:
-sudo apt install build-essential cmake libopencv-dev libarmadillo-dev libglu1-mesa-dev libxmu-dev libxi-dev
-# Clone the repository:
-git clone https://github.com/ABRG-Models/morphologica.git
-# To look at the readme file:
-cd morphologica
-less README.md
-# The cmake-driven build process:
-mkdir build
-cd build
-cmake ..
-make -j4
-sudo make install
-sudo ldconfig\end{lstlisting}
-\end{frame}
-
-\begin{frame}[fragile]
-  \frametitle{Compiling Ermentrout2009}
-  Github webpage: \url{https://github.com/ABRG-Models/Ermentrout2009}
-
-  This is an example of a model which links to libmorphologica
-  \begin{lstlisting}[language=bash]
-git clone git@github.com:ABRG-Models/Ermentrout2009.git
-cd Ermentrout2009/processes/sim
-mkdir build
-cd build
-cmake ..
-make
-cd ../../../
-# Run the model:
-python sim.py\end{lstlisting}
-\end{frame}
-
 
 \end{document}

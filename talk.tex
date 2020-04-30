@@ -1,7 +1,7 @@
 \documentclass{beamer}
 
 \usepackage{listings}
-
+\usepackage{ulem}
 \usepackage{color}
 
 \definecolor{codered}{rgb}{0.69,0.09,0.12}
@@ -41,7 +41,7 @@
 \title{Using Git for Science}
 
 \author{Seb James}
-\institute{psy6422}
+\institute{PSY6422}
 \date{2020/06/06}
 
 \begin{document}
@@ -74,7 +74,7 @@
   Revision control has two main features:
 
   \begin{enumerate}
-    \pause \item Revision control allows you to keep references to different versions of a
+    \pause \item Revision control allows you to have different versions of a
       single file \emph{without having to explicitly make copies}
       \pause \item Most revision control tools allow several people to work
       on the same files %\pause with (non-magic) algorithms that (usually) correctly merge changes
@@ -85,15 +85,15 @@
   \frametitle{File versions}
   I bet you have folders that look like this:
   \pause \begin{itemize}
-      \item myProgram.r
-      \pause \item myProgram\_old.r
-      \item myProgram\_1.r
-      \item myProgram\_thisOneWorked.r
-      \item myProgram\_whoKnowsWhatThisOneIs.r
+  \item Project1/myProgram.r
+    \pause \item Project1/myProgram\_old.r
+  \item Project1/myProgram\_1.r
+  \item Project1/myProgram\_thisOneWorked.r
+  \item Project1/myProgram\_whoKnowsWhatThisOneIs.r
   \end{itemize}
   \pause With revision control, you only have
   \begin{itemize}
-  \item myProgram.r
+  \item Project1/myProgram.r
   \end{itemize}
 \end{frame}
 
@@ -129,7 +129,7 @@
       \begin{block}{Commits}
         \begin{itemize}
           \item There can be different versions of myProgram.r available on
-            \textbf{master}; but it's a \emph{linear sequence of changes}.
+            \textbf{master}; but it's a \emph{sequence of changes}.
 
           \item Each change is a \alert{commit to master}.
 
@@ -150,15 +150,16 @@
 \begin{frame}
   \frametitle{What's in a commit?}
   \begin{columns}[T]
-    \begin{column}{.3\textwidth}
+    \begin{column}{.4\textwidth}
       \begin{block}{Commits contain changes}
         \begin{itemize}
         \item One commit can include the changes to one file
         \item One commit can also include changes to multiple files
+        \item Each commit has a \alert{commit message}
         \end{itemize}
       \end{block}
     \end{column}
-    \begin{column}{.7\textwidth}
+    \begin{column}{.6\textwidth}
       \includegraphics[width=\textwidth]{tree_mastercommits_commitdetail.png}
     \end{column}
   \end{columns}
@@ -166,45 +167,71 @@
 
 % Branch one
 \begin{frame}
-  \frametitle{Branches instead of file versions}
+  \frametitle{Checkout a branch}
   \begin{columns}[T]
     \begin{column}{.5\textwidth}
-      When you use git, you use \alert{branches} to allow you to experiment with
-      different files. There's one central branch, which
-      is usually called \textbf{master}.
       \begin{block}{Checkout}
-        When you `checkout' a branch, it updates your file to the content it
-        has on that particular branch
+        When you \alert{checkout} a branch, it updates your file to the
+        content it has on that particular branch
         \begin{itemize}
           \item Checkout \textbf{idea1}; get myProgram.r with the code for
             your first idea.
-          \item Checkout \textbf{NatureNeuroSub1}; get myProgram.r as it was
-            when you submitted your paper to Nature Neuroscience.
+          \item Checkout \textbf{paper2\_sub1}; get myProgram.r as it was
+            when you submitted your second paper based on the project.
         \end{itemize}
       \end{block}
     \end{column}
     \begin{column}{.5\textwidth}
-      \includegraphics[width=\textwidth]{tree.png}
+      \includegraphics[width=\textwidth]{tree_branchcommits.png}
     \end{column}
   \end{columns}
 \end{frame}
 
+% Pull
 \begin{frame}
-  \frametitle{\emph{Project} revisions}
-  \begin{itemize}
-    \item The ability to branch and tag \emph{really} comes into its own when
-      you have any kind of project with more than one file in it.
+  \frametitle{Fetch and pull}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      So far, so local. Now imagine there is a shared tree living at github.com.
+      \begin{block}{Fetch}
+        When you \alert{fetch} new changes to the \alert{repo}, information
+        about new branches and commits that were added are copied into your
+        local copy of the repo.
+        \begin{itemize}
+        \item Any of the existing branches could have extended
+        \item New branches could have appeared
+        \item You can \alert{pull} a branch and that will always do a
+          \alert{fetch} first
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree_newbranches.png}
+    \end{column}
+  \end{columns}
+\end{frame}
 
-    \item Without this, you find yourself needing one folder for
-      each version of your project, duplicating files left, right
-      and centre.
-  \end{itemize}
-
+% Push
+\begin{frame}
+  \frametitle{Push your commits}
+  You worked on a new feature, using a new branch. You changed some existing
+  files and added some new ones. You're ready to copy that back to github.com.
+  \begin{block}{Push}
+    The process of copying new commits and branches as achieved with git \alert{push}.
+    \begin{itemize}
+    \item You make sure you have \alert{committed} your changes to your branch
+    \item You \alert{push} your branch to the online repository (i.e. github)
+    \item If there are changes on your branch on the online repository that you don't
+      have yet, then you'll have to pull first, \alert{merge} changes and
+      \emph{then} push.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Working with other people}
-  (This is `main feature 2')
+  \frametitle{Working with other people} This is `main feature 2'. Now, rewind
+  a little, forget the trees, and think about working with a set of plain
+  files on your computer.
 
   \begin{itemize}
     \item Suppose you have some code which is used by yourself and 5 of your
@@ -220,13 +247,15 @@
     more important? Who is going to merge the two fixes together?
   \end{itemize}
 
-  \pause You need a revision control system to automate the process of
-  distributing changes between users of a set of files, and to manage
-  the merging of changes together.
+  Hopefully you can see how the tree with all its branches is going to help
+  here (also, the clever code to merge changes that you make with those that
+  your colleagues have made)
 \end{frame}
 
 \begin{frame}
   \frametitle{Other revision control systems}
+  Git is not the only game in town. Others include:
+
   \begin{itemize}
   \item RCS (Revision Control System)
   \item SCCS (Source Code Control System)
@@ -249,10 +278,11 @@
     \pause \item Most revision control tools have been pretty good at
     feature 1 (file versioning)
     \pause \item ...but not great at managing multiple contributions
-    \pause \item That caused Linus Torvalds to use the proprietary
-    BitKeeper from 2002 to manage the Linux code base.
+    \pause \item That caused Linus Torvalds to commit heresy and use the
+    \alert{proprietary} BitKeeper from 2002 to manage the Linux code base.
     \pause \item In 2005 Linus fell out with BitMover Inc., and Git was
-    created to replace it.
+    created to replace it (and so all was well again in the world of free
+    software OS development - git is fully free).
     \pause \item The name \emph{git} doesn't really mean anything.
   \end{itemize}
 \end{frame}
@@ -278,8 +308,8 @@
   \begin{itemize}
   \item Github is a commercial website which makes it easy to use Git
   \item bitbucket.org is an alternative
-  \pause \item Generally, public hosting is free, private hosting
-  incurs a fee
+  \pause \item Generally, public hosting is free, \sout{private hosting
+  incurs a fee}
   \pause \item It's pretty easy to host a git repository yourself, but
   the nice web interface has made github.com very
   popular for source code hosting
@@ -299,7 +329,7 @@
     \pause \item ``It used to work, but now I've broken it and I can't
     get it back to working again'': Revision control makes it easy to
     revert to a version of your code which you know will work
-    \pause \item You can include your paper alongside your model code
+    \pause \item You can include your paper (and your data) alongside your model code
     in a single, public repository
     \item Use of Github is a very effective way to share your
     published models with your peers

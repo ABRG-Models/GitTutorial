@@ -187,6 +187,84 @@
   \end{columns}
 \end{frame}
 
+% Merge
+\begin{frame}
+  \frametitle{Merge a branch}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      Here's where the tree analogy begins to break down a little.
+      \begin{itemize}
+      \item Here, a bug was fixed on \textbf{bug\_issue4}. While that was
+        happening, someone committed an important commit onto master
+      \item To bring the bug fix into master, the \textbf{bug\_issue4}
+        branch is \alert{merged} into \textbf{master} which creates its own
+        commit
+      \end{itemize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree_merge.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% Rebase
+\begin{frame}
+  \frametitle{Rebase a branch}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      \begin{block}{Rebase means get out the saw}
+        The developer of the bug in \textbf{bug\_issue4} wants to test the bug
+        fix works alongside the urgent commit.
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree_rebase.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+% Rebase 2
+\begin{frame}
+  \frametitle{Rebase a branch}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      \begin{block}{\alert{Rebase} means get out the saw}
+        The developer of the bug in \textbf{bug\_issue4} wants to test the bug
+        fix works alongside the urgent commit.
+        \begin{itemize}
+          \item Git has a way to `saw off' the branch  \textbf{bug\_issue4}
+            and `glue it back onto master'
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree_rebase2.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+% Rebase 3
+\begin{frame}
+  \frametitle{Rebase a branch}
+  \begin{columns}[T]
+    \begin{column}{.5\textwidth}
+      \begin{block}{Rebase means get out the saw}
+        The developer of the bug in \textbf{bug\_issue4} wants to test the bug
+        fix works alongside the urgent commit.
+        \begin{itemize}
+          \item Git has a way to `saw off' the branch  \textbf{bug\_issue4}
+            and `glue it back onto master'
+          \item Now the bug can be tested, alongside the recent change in
+            \textbf{master}, before it is then merged into \textbf{master}.
+            \item Prefer merge over rebase
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \includegraphics[width=\textwidth]{tree_rebase3.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
 % Pull
 \begin{frame}
   \frametitle{Fetch and pull}
@@ -341,6 +419,9 @@
     \begin{column}{.5\textwidth}
       \frametitle{The rest of the session}
       \begin{itemize}
+      \item Create repository on github, clone, add something
+      \item git move
+      \item git checkout -b newbranch
       \item Github READMEs and markdown
       \item Github issues
       \item doxygen and codedocs.xyz

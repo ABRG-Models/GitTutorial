@@ -97,6 +97,9 @@
   \end{itemize}
 \end{frame}
 
+% SHA1. 40 chars: 525e2104bc8f30057a1e5d264b51be6f113f7181
+% Each one is 4 bits, so it's a 160 bit hash with >10^48 values
+
 % The master branch slide
 \begin{frame}
   \frametitle{Branches instead of file versions}
@@ -108,9 +111,9 @@
       \begin{block}{Clone}
         \begin{itemize}
         \item When you \alert{clone} a repository from github, you'll get all
-          the files as they exist on the \textbf{master} branch
+         \textbf{myProgram.r} as it exists on the \textbf{master} branch
 
-        \item Also you get \emph{all the information needed} to see the files
+        \item Also you get \emph{all the information needed} to see \textbf{myProgram.r}
           on any of the other branches (each has a name)
         \end{itemize}
       \end{block}
@@ -264,13 +267,36 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Working with other people}
+
+    This is `main feature 2'. Now, rewind a little, forget the trees, and
+    think about working with a set of plain files on your computer.
+
+
+  \begin{itemize}
+    \item Suppose you have some code which is used by yourself and 5 of your
+      colleagues - some sort of library.
+
+    \pause \item You find an error and fix it. Now you have to email the fix to \emph{5} people.
+
+    \pause \item Just after you emailed them, you find an error in your fix, and you
+    have to send another email...
+
+    \pause \item Now imagine that one of your colleagues found a
+    separate fix in the same file and emails that around. Which fix is
+    more important? Who is going to merge the two fixes together?
+  \end{itemize}
+
+  This is where a central copy of the repository becomes important.
+\end{frame}
 
 % Pull
 \begin{frame}
   \frametitle{Fetch and pull}
   \begin{columns}[T]
     \begin{column}{.5\textwidth}
-      So far, so local. Now imagine there is a shared tree living at github.com.
+      Now imagine there is a shared tree living at github.com.
       \begin{block}{Fetch}
         When you \alert{fetch} new changes to the \alert{repo}, information
         about new branches and commits that were added are copied into your
@@ -304,30 +330,6 @@
       \emph{then} push.
     \end{itemize}
   \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Working with other people} This is `main feature 2'. Now, rewind
-  a little, forget the trees, and think about working with a set of plain
-  files on your computer.
-
-  \begin{itemize}
-    \item Suppose you have some code which is used by yourself and 5 of your
-      colleagues - some sort of library.
-
-    \pause \item You find an error and fix it. Now you have to email the fix to \emph{5} people.
-
-    \pause \item Just after you emailed them, you find an error in your fix, and you
-    have to send another email...
-
-    \pause \item Now imagine that one of your colleagues found a
-    separate fix in the same file and emails that around. Which fix is
-    more important? Who is going to merge the two fixes together?
-  \end{itemize}
-
-  Hopefully you can see how the tree with all its branches is going to help
-  here (also, the clever code to merge changes that you make with those that
-  your colleagues have made)
 \end{frame}
 
 \begin{frame}
@@ -369,15 +371,16 @@
   \frametitle{What's different about Git?}
   \begin{itemize}
   \item Git is a \emph{distributed} revision control system
-  \pause \item It doesn't have the classical client-server architecture...
-  \pause \item ...although typically you will work with a common
-  \alert{remote} repository as your \alert{upstream} source.
-  \pause \item When you \alert{clone} a repository from a source, you have
+    \pause \item It doesn't have the classical client-server architecture...
+    \pause \item When you \alert{clone} a repository from a source, you have
     \emph{everything} (all the file history and meta-data) in those
     files to become a source for someone else.
-  \pause \item That means you can work on your code, making incremental
-  \alert{commits} even when you don't have internet access.
-  \pause \item And every copy of the \alert{repo} is a backup!
+    \pause \item That means you can work on your code, making incremental
+    \alert{commits} even when you don't have internet access.
+  \item And every copy of the \alert{repo} is a backup!
+  \pause \item It also means you can `\alert{fork}' a repository
+    \pause \item Typically you will work with a common
+    \alert{remote} repository (github) as your \alert{upstream} source.
   \end{itemize}
 \end{frame}
 
@@ -401,7 +404,10 @@
   often our work is carried out individually, but...
   \begin{itemize}
     \pause \item We write code, so that's very natural to hold in
-    revision control (also XML)
+    revision control
+    \pause \item We store experimental data which is valuable and needs to be
+    protected
+    \pause \item We write papers about the data and the code
     \pause \item We have a frequent need to \alert{tag} our work (e.g. to
     match up with a paper or document)
     \pause \item ``It used to work, but now I've broken it and I can't
@@ -420,7 +426,7 @@
       \frametitle{The rest of the session}
       \begin{itemize}
       \item Create repository on github, clone, add something
-      \item git move
+      \item git add, git move, git remove, git branch -D etc
       \item git checkout -b newbranch
       \item Github READMEs and markdown
       \item Github issues
@@ -430,12 +436,15 @@
     \end{column}
     \begin{column}{.5\textwidth}
 
-      For a hands-on tutorial, head over to:
+      For a good hands-on tutorial, head over to:
 
       \url{http://sebjameswml.github.io/git-novice/}
 
-      And start on the lesson ``A better kind of Backup'' using your RStudio
-      terminal.
+      or try the more up to date version of that `Software Carpentry' resource
+      at:
+
+      \url{http://swcarpentry.github.io/git-novice/}
+
     \end{column}
   \end{columns}
 \end{frame}

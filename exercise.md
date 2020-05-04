@@ -1,16 +1,27 @@
 # Exercise following the class
 
-Create a git repository on github.com to put the work you've done so
-far on the course. Initialise it with a README.md and an R-specific
-.gitignore file.
+Create a git repository on https://github.com to put the work you've
+done so far on the course. Initialise it with a README.md and an
+R-specific .gitignore file.
 
-Add the work that you've done from the course, file by file.
+Edit (and commit) the README.md with a summary statement of some sort
+describing what the repository contains.
 
-Use git branches to tag the work, so that you could see a version of
-the repository with only the work from the first assignment, or a
-version with all of the assignments.
+Add the work that you've done from the course; to date, that will be
+the coding from
+https://tomstafford.github.io/psy6422/coding-principles.html and the
+markdown from https://tomstafford.github.io/psy6422/rmarkdown.html
 
-Improve, or make comments in one of the assignments on its own branch,
+Use git branches to tag the work (say as **Chapter5** and **Chapter6**, so
+that you could see a version of the repository with only the coding
+work from the first assignment, or a version with both of the
+assignments.
+
+Improve your code(1) on the **Chapter5** branch,
 commit the changes on that branch (not on master) and git push that
 branch to github.com. Tag the finished state of that branch with
-ANOTHER branch.
+ANOTHER branch (**Chapter5Polished**).
+
+
+(1) Is your code perfect? If so, then just add a code comment saying
+it's already perfect!

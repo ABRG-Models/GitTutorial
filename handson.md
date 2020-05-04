@@ -13,7 +13,7 @@ git interface, how to:
 * git checkout -b
 * git merge
 
-Although I've not documented everything I've done, this is all stuff
-that you'll find in many online tutorials, including the Software
-Carpentry tutorial, so you can easily research and review the commands
-using the web.
+Although I've not documented everything I've done, these are common
+commands that you'll find in the many online tutorials (including the
+Software Carpentry tutorial mentioned in the talk slides), so you can
+easily research and review the commands for the homework exercise.

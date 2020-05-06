@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="231.17058mm"
+   height="297.65134mm"
+   viewBox="0 0 231.17058 297.65134"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="with_git2.svg"
+   inkscape:export-filename="/home/seb/src/GitTutorial/with_git2.png"
+   inkscape:export-xdpi="199.98399"
+   inkscape:export-ydpi="199.98399">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="82.986649"
+     inkscape:cy="542.22759"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1866"
+     inkscape:window-height="1016"
+     inkscape:window-x="54"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(8.5964924,6.0399662)">
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000bff;stroke-width:1.31799996;stroke-miterlimit:3.70000005;stroke-dasharray:none;stroke-opacity:1"
+       id="path4526"
+       cx="104.69941"
+       cy="142.78571"
+       rx="112.6369"
+       ry="148.16667" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#00ff81;stroke-width:1.21800005;stroke-miterlimit:3.70000005;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4520"
+       width="74.083336"
+       height="31.372023"
+       x="92.604172"
+       y="180.20535" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="94.872017"
+       y="198.34821"
+       id="text4524"><tspan
+         sodipodi:role="line"
+         id="tspan4522"
+         x="94.872017"
+         y="198.34821"
+         style="stroke-width:0.26458332">myProgram.r</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="171.22322"
+       y="15.029761"
+       id="text4530"
+       inkscape:export-xdpi="199.98399"
+       inkscape:export-ydpi="199.98399"><tspan
+         sodipodi:role="line"
+         id="tspan4528"
+         x="171.22322"
+         y="15.029761"
+         style="fill:#000bff;fill-opacity:1;stroke-width:0.26458332">Project1</tspan></text>
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#0002ff;stroke-width:1.50003111;stroke-miterlimit:3.70000005;stroke-dasharray:none;stroke-opacity:1"
+       id="path4591"
+       cx="105.7413"
+       cy="70.873283"
+       rx="64.338425"
+       ry="69.441101" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="26.440865"
+       y="106.29895"
+       id="text4530-5"><tspan
+         sodipodi:role="line"
+         id="tspan4528-3"
+         x="26.440865"
+         y="106.29895"
+         style="fill:#000bff;fill-opacity:1;stroke-width:0.26458332">.git</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#00ff81;stroke-width:1.21325302;stroke-miterlimit:3.70000005;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4520-3"
+       width="86.183105"
+       height="35.534286"
+       x="61.985825"
+       y="23.15398" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="69.925583"
+       y="36.385406"
+       id="text4524-6"><tspan
+         sodipodi:role="line"
+         id="tspan4522-7"
+         x="69.925583"
+         y="36.385406"
+         style="stroke-width:0.26458332">myProgram.r</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="66.620766"
+       y="50.462563"
+       id="text4617"><tspan
+         sodipodi:role="line"
+         id="tspan4615"
+         x="66.620766"
+         y="50.462563"
+         style="stroke-width:0.26458332">(branch idea1)</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1.49568331;stroke-miterlimit:3.70000005;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4520-5"
+       width="92.325668"
+       height="37.959919"
+       x="58.475945"
+       y="72.304031" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="68.510643"
+       y="83.913452"
+       id="text4524-62"><tspan
+         sodipodi:role="line"
+         id="tspan4522-9"
+         x="68.510643"
+         y="83.913452"
+         style="stroke-width:0.26458332">myProgram.r</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="62.873119"
+       y="102.54428"
+       id="text4617-1"><tspan
+         sodipodi:role="line"
+         id="tspan4615-2"
+         x="62.873119"
+         y="102.54428"
+         style="stroke-width:0.26458332">(branch master)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 63.218984,157.05185 v 88.8244"
+       id="path4670"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 63.218984,157.05185 H 88.543387"
+       id="path4672"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 63.218984,245.87625 H 88.543387"
+       id="path4672-7"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="5.3886266"
+       y="164.23338"
+       id="text4691"><tspan
+         sodipodi:role="line"
+         id="tspan4689"
+         x="5.3886266"
+         y="164.23338"
+         style="stroke-width:0.26458332">The files</tspan><tspan
+         sodipodi:role="line"
+         x="5.3886266"
+         y="177.46255"
+         style="stroke-width:0.26458332"
+         id="tspan4693">you see</tspan><tspan
+         sodipodi:role="line"
+         x="5.3886266"
+         y="190.69171"
+         style="stroke-width:0.26458332"
+         id="tspan4705">on branch</tspan><tspan
+         sodipodi:role="line"
+         x="5.3886266"
+         y="203.92088"
+         style="stroke-width:0.26458332"
+         id="tspan4728">idea1</tspan></text>
+  </g>
+</svg>

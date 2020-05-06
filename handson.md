@@ -12,6 +12,9 @@ git interface, how to:
 * git remove
 * git checkout -b
 * git merge
+* Forking on github
+* What could possibly go wrong?
+* A talk through of some science that's on github
 
 Although I've not documented everything I've done, these are common
 commands that you'll find in the many online tutorials (including the

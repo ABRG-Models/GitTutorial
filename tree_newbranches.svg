@@ -14,7 +14,7 @@
    viewBox="0 0 501.82234 384.01702"
    version="1.1"
    id="svg932"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="tree_newbranches.svg"
    inkscape:export-filename="/home/seb/src/GitTutorial/tree_newbranches.png"
    inkscape:export-xdpi="449.5"
@@ -29,14 +29,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="258.94383"
-     inkscape:cy="618.93564"
+     inkscape:cx="161.96919"
+     inkscape:cy="538.12344"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="2493"
+     inkscape:window-width="2488"
      inkscape:window-height="1376"
-     inkscape:window-x="67"
+     inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-global="false"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -310,7 +310,7 @@
          id="tspan5706"
          x="112.55727"
          y="5.0338054"
-         style="stroke-width:0.16084011">(master grew, too)</tspan></text>
+         style="stroke-width:0.16084011">(main grew, too)</tspan></text>
     <path
        style="opacity:0.99299999;fill:#844a1c;fill-opacity:0.75784757;stroke:#000000;stroke-width:0.53538084;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        d="m -164.79153,356.21498 -7.07224,-0.166 1.31138,-3.484 c 3.14367,-8.35195 6.59373,-25.39736 8.80955,-43.52453 4.83434,-39.54874 7.0676,-92.55803 7.10775,-168.71126 l -0.37721,-17.16944 -0.23723,-2.18268 c 3.09013,6.0158 3.44507,5.50866 5.40662,3.46116 0.35787,3.96606 -0.4464,12.45863 -0.77426,19.48576 -0.38916,8.34104 0.1475,58.48971 1.07208,77.45204 1.97555,40.51395 5.32457,75.08571 10.04562,103.70059 1.67689,10.16378 5.11668,28.03038 5.89176,30.60234 0.26343,0.87413 -0.51742,0.92779 -11.91488,0.81873 -6.70823,-0.0642 -15.37929,-0.19143 -19.26902,-0.28271 z"

@@ -14,7 +14,7 @@
    viewBox="0 0 244.8308 311.98074"
    version="1.1"
    id="svg932"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="tree_mastercommits_head.svg"
    inkscape:export-filename="/home/seb/src/GitTutorial/tree_mastercommits_head.png"
    inkscape:export-xdpi="450"
@@ -58,14 +58,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="-54.474427"
+     inkscape:cx="-351.61728"
      inkscape:cy="623.7378"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="2493"
+     inkscape:window-width="2488"
      inkscape:window-height="1376"
-     inkscape:window-x="67"
+     inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-global="false"
@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -238,7 +238,7 @@
          id="tspan1662"
          x="127.77666"
          y="294.01489"
-         style="stroke-width:0.26458332">master</tspan></text>
+         style="stroke-width:0.26458332">main</tspan></text>
     <path
        style="fill:none;stroke:#ffffff;stroke-width:1.465;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="M 106.23202,284.94343 C 102.25771,156.27497 104.93147,37.785049 104.93147,37.785049"

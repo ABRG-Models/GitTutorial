@@ -148,18 +148,18 @@
 % SHA1. 40 chars: 525e2104bc8f30057a1e5d264b51be6f113f7181
 % Each one is 4 bits, so it's a 160 bit hash with >10^48 values
 
-% The master branch slide
+% The main branch slide
 \begin{frame}
   \frametitle{Branches instead of file versions}
   \begin{columns}[T]
     \begin{column}{.5\textwidth}
       When you use git, you use \alert{branches} to work with
       different file versions. There's one central branch, which
-      is usually called \textbf{master}.
+      is usually called \textbf{main}.
       \begin{block}{Clone}
         \begin{itemize}
         \item When you \alert{clone} a repository from github, you'll get all
-         \textbf{myProgram.r} as it exists on the \textbf{master} branch
+         \textbf{myProgram.r} as it exists on the \textbf{main} branch
 
         \item Also you get \emph{all the information needed} to see \textbf{myProgram.r}
           on any of the other branches (each has a name)
@@ -172,22 +172,22 @@
   \end{columns}
 \end{frame}
 
-% The master branch with increments/commits
+% The main branch with increments/commits
 \begin{frame}
-  \frametitle{A sequence of changes on master}
+  \frametitle{A sequence of changes on main}
   \begin{columns}[T]
     \begin{column}{.5\textwidth}
       \begin{block}{Commits}
         \begin{itemize}
           \item There can be different versions of myProgram.r available on
-            \textbf{master}; but it's a \emph{sequence of changes}.
+            \textbf{main}; but it's a \emph{sequence of changes}.
 
-          \item Each change is a \alert{commit to master}.
+          \item Each change is a \alert{commit to main}.
 
           \item Each commit has a \emph{universally unique identifier}.
 
           \item When you first clone, you'll see the files at the \alert{HEAD}
-            of \textbf{master}
+            of \textbf{main}
         \end{itemize}
       \end{block}
     \end{column}
@@ -246,9 +246,9 @@
       Here's where the tree analogy begins to break down a little.
       \begin{itemize}
       \item Here, a bug was fixed on \textbf{bug\_issue4}. While that was
-        happening, someone committed an important commit onto master
-      \item To bring the bug fix into master, the \textbf{bug\_issue4}
-        branch is \alert{merged} into \textbf{master} which creates its own
+        happening, someone committed an important commit onto main
+      \item To bring the bug fix into main, the \textbf{bug\_issue4}
+        branch is \alert{merged} into \textbf{main} which creates its own
         commit
       \end{itemize}
     \end{column}
@@ -283,7 +283,7 @@
         fix works alongside the urgent commit.
         \begin{itemize}
           \item Git has a way to `saw off' the branch  \textbf{bug\_issue4}
-            and `glue it back onto master'
+            and `glue it back onto main'
         \end{itemize}
       \end{block}
     \end{column}
@@ -302,9 +302,9 @@
         fix works alongside the urgent commit.
         \begin{itemize}
           \item Git has a way to `saw off' the branch  \textbf{bug\_issue4}
-            and `glue it back onto master'
+            and `glue it back onto main'
           \item Now the bug can be tested, alongside the recent change in
-            \textbf{master}, before it is then merged into \textbf{master}.
+            \textbf{main}, before it is then merged into \textbf{main}.
             \item Prefer merge over rebase
         \end{itemize}
       \end{block}

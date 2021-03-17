@@ -8,6 +8,8 @@ of Psychology by Tom Stafford).
 To view the talk, see talk.pdf. This was built from talk.tex using
 `pdflatex talk.tex`.
 
+This is a test line.
+
 There are notes on the hands-on session, see
 [handson.md](https://github.com/ABRG-Models/GitTutorial/blob/master/handson.md)
 and an exercise to complete:
